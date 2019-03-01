@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        @media (max-width: 600px) {
+            .navbar-custom {
+                background-color: #848482;
+                }
+            }
+             
+        nav {
+            background-color: #848482;
+        }
+        .navbar-brand {
+            color: white;
+            background-color: #54626F;
+            padding: 10px;
+            font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            font-display: rgb(5, 5, 5);
+        }
+        .navbar-brand:link {
+            color: white;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        
+        h1 {
+            color: #6699CC;
+            font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+            font-weight: bold;
+        }
+        .footer {
+            border-top:5px solid  #6699CC;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            /* Set the fixed height of the footer here */
+            height: 50px;
+            line-height: 50px;
+            /* Vertically center the text there */
+            color: white;
+        }
+        #footer-text {
+            color: white
+        }
+    </style>
+
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-light bg-white;">
+        <a class="navbar-brand text-light" href="landing.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav ml-auto w-100 justify-content-end">
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="temperature.html">Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 bg-white">
+                <h1 class="text-center mt-5 mb-3">Summary: Latitude vs. X</h1>
+                <hr>
+                <img src="/images/temperature.png" height=50% width=50% class="img-thumbnail float-left mr-3 mb-3" alt="placeholder image">
+                <p> "What's the weather like as we approach the equator?" 
+                    To answer that question, various weather factors including temperature, humidity, 
+                    cloudiness, and wind speed for more than 500 cities was captured using the 
+                    OpenWeatherMap API. 
+                </p>    
+                <p> Python was utilized for analysis and Matplotlib for the visualizations.  
+                </p> 
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4 bg-white">
+                <h1 class="text-center mt-5 mb-3">Visualizations</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-6 mb-4 text-right">
+                        <a href="cloudiness.html">
+                            <img src="/images/cloudiness.png" height=100% width=100% alt="Lat vs Cloudiness">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 mb-4 text-left">
+                        <a href="humidity.html">
+                            <img src="/images/humidity.png" height=100% width=100% alt="Lat vs Humidity ">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 mb-4 text-right">
+                        <a href="Temperature.HTML">
+                            <img src="/images/temperature.png" height=100% width=100% alt="Lat vs Temperature">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 mb-4 text-left">
+                        <a href="wind.html"> 
+                            <img src="/images/wind speed.png" height=100% width=100% alt="Lat vs Wind Speed">
+                        </a>
+                    </div>
+                </div>
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+	<footer class="panel panel-default">
+    </footer>
+
+</body>
+
+</html>
